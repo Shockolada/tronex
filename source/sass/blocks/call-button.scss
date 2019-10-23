@@ -1,0 +1,103 @@
+.call-button {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $color-violet;
+
+  &::before,
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid $color-violet;
+    left: -15px;
+    right: -15px;
+    top: -15px;
+    bottom: -15px;
+  }
+
+  &::before {
+    animation: pulse 1.5s linear infinite;
+  }
+
+  &::after {
+    animation: 1.5s pulse 0.55s linear infinite;
+  }
+}
+
+.call-button__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transform: rotate(20deg);
+
+  animation: 5s bzz linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    border: 1px solid $color-violet;
+  }
+
+  50% {
+    opacity: 1;
+    border: 1px solid $color-violet;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+    border: 1px solid $color-accent;
+  }
+}
+
+@keyframes bzz {
+  0% {
+    transform: scale(1) rotate(20deg);
+  }
+
+  5% {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  10% {
+    transform: scale(1.1) rotate(20deg);
+  }
+
+  15% {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  20% {
+    transform: scale(1.1) rotate(20deg);
+  }
+
+  25% {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  30% {
+    transform: scale(1.1) rotate(20deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(20deg);
+  }
+}
+
+@media(min-width: $desktopXS) {
+  .call-button {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+.title {
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+@media (min-width: $desktopS) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 37px;
+  }
+}

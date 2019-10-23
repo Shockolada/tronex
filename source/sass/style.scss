@@ -1,0 +1,45 @@
+/* BASIC PAGE NEEDS */
+@import "basic/variables.scss";
+@import "basic/fonts.scss";
+@import "basic/normalize.scss";
+@import "libs/swiper.scss";
+@import "blocks/slider.scss";
+@import "basic/scaffolding.scss";
+@import "basic/container.scss";
+@import "basic/section.scss";
+@import "mixins/mixins.scss";
+
+/* BLOCKS */
+@import "blocks/link.scss";
+@import "blocks/button.scss";
+@import "blocks/hamburger-btn.scss";
+@import "blocks/close-btn.scss";
+@import "blocks/call-button.scss";
+@import "blocks/call-btn.scss";
+@import "blocks/title.scss";
+@import "blocks/overlay.scss";
+@import "blocks/modal.scss";
+@import "blocks/form.scss";
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/language.scss";
+@import "blocks/menu.scss";
+@import "blocks/hero.scss";
+@import "blocks/hero-slider.scss";
+@import "blocks/consultation-form.scss";
+
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+@import "blocks/details-table.scss";
+@import "blocks/about.scss";
+@import "blocks/features.scss";
+@import "blocks/testimonials.scss";
+@import "blocks/testimonials-slider.scss";
+@import "blocks/parthners.scss";
+@import "blocks/parthners-slider.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+
+@import "blocks/page-footer.scss";
+@import "blocks/webit.scss";

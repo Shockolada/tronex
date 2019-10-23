@@ -1,0 +1,86 @@
+.modal {
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 100%;
+  max-width: 700px;
+  max-height: 80vh;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: $color-violet;
+
+  transition: top 0.3s cubic-bezier(0, 0, 0, 1.2);
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal__form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.modal__form input::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+
+.modal__form input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+
+/* Firefox 19+ */
+.modal__form input:-moz-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+
+/* Firefox 18- */
+.modal__form input:-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+
+.modal__form button {
+  margin-top: 40px;
+}
+
+
+.modal.active {
+  top: 50%;
+}
+
+@media (min-width: $tablet) {
+  .modal {
+    padding: 50px;
+  }
+
+  .modal__title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .modal {
+    padding: 100px 80px;
+  }
+}

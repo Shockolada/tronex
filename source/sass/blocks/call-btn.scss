@@ -1,0 +1,71 @@
+.call-btn {
+  min-height: 50px;
+  padding-left: 60px;
+  background-color: $color-accent;
+
+  white-space: nowrap;
+}
+
+.call-btn__icon {
+  position: absolute;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+  top: 10px;
+  left: 13px;
+}
+
+@keyframes call {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  5% {
+    transform: scale(1.1) rotate(20deg);
+  }
+
+  10% {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  15% {
+    transform: scale(1.1) rotate(20deg);
+  }
+
+  20% {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  25% {
+    transform: scale(1.1) rotate(20deg);
+  }
+
+  30% {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .call-btn__icon {
+    animation: 5s call linear infinite;
+  }
+}
+
+@media (min-width: $desktopS) {
+  .call-btn {
+    min-height: 56px;
+
+  }
+
+  .call-btn__icon {
+    top: 8px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+}

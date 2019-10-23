@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  justify-content: center;
+  @include list-reset;
+  margin-right: -10px;
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+
+  background-color: transparent;
+
+  transition: background-color 0.2s linear;
+}
+
+.social__link--fb:hover,
+.social__link--fb:focus {
+  background-color: #3b5998;
+}
+
+.social__icon {
+  fill: #ffffff;
+}

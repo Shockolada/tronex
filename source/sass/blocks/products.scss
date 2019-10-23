@@ -1,0 +1,11 @@
+.products__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $mobileM) {
+  .products__list {
+    margin-right: -10px;
+  }
+}

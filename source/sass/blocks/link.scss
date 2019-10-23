@@ -1,0 +1,29 @@
+.link {
+  position: relative;
+  color: $color-text;
+  text-decoration: none;
+
+  transition: color 0.2s linear;
+}
+
+.link:hover,
+.link:focus,
+.link.active {
+  color: $color-accent;
+}
+
+.link--white {
+  color: #ffffff;
+}
+
+.link:hover,
+.link:focus,
+.link.active {
+  color: $color-accent;
+}
+
+.link--white:hover,
+.link--white:focus,
+.link--white.active {
+  color: $color-text;
+}

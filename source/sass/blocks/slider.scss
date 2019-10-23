@@ -1,0 +1,20 @@
+.slider {
+  .swiper-wrapper {
+    // // width: calc(100% - 50px);
+    // // padding: 25px;
+    // margin-left: 30px;
+  }
+
+  .swiper-button-prev {
+    left: -5px;
+  }
+
+  .swiper-button-next {
+    right: -5px;
+  }
+}
+
+// .slider.swiper-container {
+//   width: calc(100% - 50px);
+//   margin-left: 25px;
+// }

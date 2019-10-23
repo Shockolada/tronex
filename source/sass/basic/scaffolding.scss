@@ -1,0 +1,62 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  font-family: $font;
+  font-weight: 400;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.page-content {
+  padding-top: 65px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+@media(min-width: $desktopS) {
+  .page-content {
+    padding-top: 105px;
+  }
+}
+
+
+// @media(min-width: $desktopL) {
+//   .page-content {
+//     padding-top: 100px;
+//   }
+// }

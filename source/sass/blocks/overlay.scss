@@ -5,7 +5,14 @@
   left: 0;
   bottom: 0;
   z-index: 8;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba($color-violet, 0.3);
 
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s linear;
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
 }

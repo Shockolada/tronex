@@ -1,0 +1,40 @@
+.modal-details {
+  position: fixed;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 80vh;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+
+  transition: left 0.3s cubic-bezier(0, 0, 0, 1.2);
+}
+
+.modal-details__title {
+  width: calc(100% + 40px);
+  margin: 0;
+  margin-left: -20px;
+  padding: 30px 20px;
+  clip-path: polygon(0 0, 100% 0%, 100% 50%, 0 100%);
+  background-color: $color-violet;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.modal-details.active {
+  left: 50%;
+}
+
+@media (min-width: $tabletS) {
+  .modal-details {
+    width: 90%;
+  }
+}

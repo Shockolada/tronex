@@ -66,8 +66,14 @@
 }
 
 .consultation-form__btn {
-  color: $color-accent;
+  color: $color-violet;
   background-color: #ffffff;
+  transition: 0.2s color linear;
+}
+
+.consultation-form__btn:hover,
+.consultation-form__btn:focus {
+  color: $color-accent;
 }
 
 @media (min-width: $tabletS) {

@@ -21,13 +21,13 @@
   text-align: center;
   color: $color-text;
   white-space: nowrap;
+  letter-spacing: 0;
 
   cursor: pointer;
   transition: color 0.2s linear;
 }
 
 .main-nav__link:hover,
-.main-nav__link:focus,
 .main-nav__link.active {
   color: $color-accent;
 }

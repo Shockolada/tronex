@@ -18,14 +18,40 @@
   border: 1px solid #ffffff;
   border-radius: 50%;
 
-  background-color: transparent;
+  background: transparent;
 
   transition: background-color 0.2s linear;
+}
+
+.social__link--insta {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  } 
 }
 
 .social__link--fb:hover,
 .social__link--fb:focus {
   background-color: #3b5998;
+}
+
+.social__link--insta:hover,
+.social__link--insta:focus {
+  &::before {
+    opacity: 1;
+  }
 }
 
 .social__icon {

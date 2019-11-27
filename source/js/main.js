@@ -76,9 +76,26 @@ $(document).ready(function () {
 
   $('.open-recall-modal-btn').click(function (evt) {
     evt.preventDefault();
-    console.log('+');
     $('#modal-call-back').addClass('active');
     $('.overlay').addClass('active');
+  });
+
+  if ($(window).width() > 940) {
+    $('.call-button').click(function (evt) {
+      evt.preventDefault();
+      $('#modal-call-back').addClass('active');
+      $('.overlay').addClass('active');
+    })
+  }
+
+  $(window).resize(function () {
+    if ($(window).width() > 940) {
+      $('.call-button').click(function (evt) {
+        evt.preventDefault();
+        $('#modal-call-back').addClass('active');
+        $('.overlay').addClass('active');
+      })
+    }
   });
 
   $('.modal-close').click(function (evt) {

@@ -57,3 +57,15 @@
 .social__icon {
   fill: #ffffff;
 }
+
+.social--colored {
+  .social__link--fb {
+    border: none;
+    background-color: $color-violet;
+  }
+
+  .social__link:hover, 
+  .social__link:focus {
+    background-color: #3b5998;
+  }
+}

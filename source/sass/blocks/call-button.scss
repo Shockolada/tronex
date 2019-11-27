@@ -1,6 +1,6 @@
 .call-button {
   position: fixed;
-  right: 15px;
+  right: 20px;
   bottom: 20px;
   z-index: 5;
   display: flex;
@@ -9,7 +9,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: $color-violet;
+  background-color: $color-accent;
 
   &::before,
   &::after {
@@ -17,7 +17,7 @@
     display: block;
     position: absolute;
     border-radius: 50%;
-    border: 1px solid $color-violet;
+    border: 1px solid $color-accent;
     left: -15px;
     right: -15px;
     top: -15px;
@@ -47,18 +47,18 @@
   0% {
     transform: scale(0.5);
     opacity: 0;
-    border: 1px solid $color-violet;
+    border: 1px solid $color-accent;
   }
 
   50% {
     opacity: 1;
-    border: 1px solid $color-violet;
+    border: 1px solid $color-accent;
   }
 
   100% {
     transform: scale(1.2);
     opacity: 0;
-    border: 1px solid $color-accent;
+    border: 1px solid $color-violet;
   }
 }
 
@@ -98,6 +98,31 @@
 
 @media(min-width: $desktopXS) {
   .call-button {
-    display: none;
+    left: 40px;
+    right: unset;
+    bottom: 40px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .call-button__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .call-button:hover,
+  .call-button:focus {
+
+    &::before {
+      // animation-play-state: paused;
+    }
+
+    &::after {
+      // animation-play-state: paused;
+    }
+
+    .call-button__icon {
+      animation: rotateIcon 1.6s linear backwards;
+    }
   }
 }

@@ -1,6 +1,7 @@
 .details-table {
   margin-top: 30px;
   width: 100%;
+  max-height: 60vh;
   overflow: auto;
 
   table {
@@ -16,5 +17,41 @@
     font-size: 15px;
     font-weight: 400;
     color: #000000;
+  }
+}
+
+@media (min-width: $desktopXS) {
+  .details-table {
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-track {
+      // background-color: $color-violet;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+      background-color: rgb(230,230,230);
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      height: 50px;
+      background-color: $color-violet;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-corner {
+      // background-color: #999;
+    }
+
+    &::-webkit-resizer {
+      // background-color: #666;
+    }
   }
 }

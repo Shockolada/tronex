@@ -95,13 +95,17 @@
 @media (min-width: $desktopS) {
   .call-btn {
     min-height: 56px;
-
+    font-size: 18px;
   }
 
   .call-btn__icon {
     top: 11px;
     left: 15px;
-    // width: 40px;
-    // height: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .call-btn {
+    font-size: 20px;
   }
 }

@@ -105,6 +105,7 @@ $(document).ready(function () {
   });
 
   $('.overlay').click(function (evt) {
+    $('html, body').removeClass('no-scroll');
     $('.modal').removeClass('active');
     $('.overlay').removeClass('active');
     $('.product__details').removeClass('active');
@@ -112,6 +113,7 @@ $(document).ready(function () {
 
   $('.open-details-btn').click(function (evt) {
     evt.preventDefault();
+    $('html, body').addClass('no-scroll');
     $(this).closest('.product').find('.product__details').addClass('active');
     $('.overlay').addClass('active');
   })
@@ -120,6 +122,7 @@ $(document).ready(function () {
     evt.preventDefault();
     $('.modal-details').removeClass('active');
     $('.overlay').removeClass('active');
+    $('html, body').removeClass('no-scroll');
   });
 
 

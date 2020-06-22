@@ -1,42 +1,401 @@
 <!DOCTYPE html>
 <html lang="ro">
+  @@include('./html-partials/head.html')
 
-@@include('./html-partials/head.html')
+  <body>
+    @@include('./html-partials/page-header.html')
 
-<body>
+    <main class="">
+      @@include('./html-partials/hero.html')
+      @@include('./html-partials/products.html')
+      @@include('./html-partials/about.html')
+      @@include('./html-partials/features.html')
+      @@include('./html-partials/testimonials.html')
+      @@include('./html-partials/parthners.html')
+      @@include('./html-partials/contacts.html')
+    </main>
+    <!-- / .page-content -->
 
-  @@include('./html-partials/page-header.html')
+    @@include('./html-partials/page-footer.html')
+    @@include('./html-partials/call-button.html')
+    @@include('./html-partials/modal-call-back.html')
+    @@include('./html-partials/overlay.html')
 
-  <main class="">
+    <div class="product__details modal-details modalShop">
+      <button
+        class="product-details-close close-btn close-btn--circle"
+      ></button>
+      <h3 class="modal-details__title">METAL LAMINAT</h3>
+      <div class="modal-details__table-wrap">
+        <div class="details-table">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="6">Armatura</th>
+              </tr>
+              <tr>
+                <th>Product</th>
+                <th>Unitate de măsură</th>
+                <th>Preț</th>
+                <th>Număr</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Armatura 8</td>
+                <td>m2</td>
+                <td>200 lei</td>
+                <td>
+                  <div class="counter">
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--minus stepDown"
+                      onclick="this.parentNode.querySelector('input[type=number]').value--"
+                    ></button>
+                    <input
+                      class="counter__input"
+                      name="number"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--plus stepUp"
+                      onclick="this.parentNode.querySelector('input[type=number]').value++"
+                    ></button>
+                  </div>
+                </td>
+                <td>200 lei</td>
+                <td>
+                  <button class="button button--red" type="button">
+                    Adaugă în coș
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Armatura 10</td>
+                <td>buc</td>
+                <td>200 lei</td>
+                <td>
+                  <div class="counter">
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--minus stepDown"
+                      onclick="this.parentNode.querySelector('input[type=number]').value--"
+                    ></button>
+                    <input
+                      class="counter__input"
+                      name="number"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--plus stepUp"
+                      onclick="this.parentNode.querySelector('input[type=number]').value++"
+                    ></button>
+                  </div>
+                </td>
+                <td>200 lei</td>
+                <td>
+                  <button class="button button--red" type="button">
+                    Adaugă în coș
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Armatura 12</td>
+                <td>kg</td>
+                <td>200 lei</td>
+                <td>
+                  <div class="counter">
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--minus stepDown"
+                      onclick="this.parentNode.querySelector('input[type=number]').value--"
+                    ></button>
+                    <input
+                      class="counter__input"
+                      name="number"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--plus stepUp"
+                      onclick="this.parentNode.querySelector('input[type=number]').value++"
+                    ></button>
+                  </div>
+                </td>
+                <td>200 lei</td>
+                <td>
+                  <button class="button button--red" type="button">
+                    Adaugă în coș
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Armatura 14</td>
+                <td>buc</td>
+                <td>200 lei</td>
+                <td>
+                  <div class="counter">
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--minus stepDown"
+                      onclick="this.parentNode.querySelector('input[type=number]').value--"
+                    ></button>
+                    <input
+                      class="counter__input"
+                      name="number"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--plus stepUp"
+                      onclick="this.parentNode.querySelector('input[type=number]').value++"
+                    ></button>
+                  </div>
+                </td>
+                <td>200 lei</td>
+                <td>
+                  <button class="button button--red" type="button">
+                    Adaugă în coș
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-details__note">
+        <span>*</span> Prețul poate varia pentru o altă unitate de măsură. La
+        cantități mai mari de produs prețul este posibil de negociat. Pentru mai
+        multe informații sunați managerul: +373 6980600
+      </div>
+    </div>
 
-    @@include('./html-partials/hero.html')
+    <div class="product__details cart modal-details modalCart">
+      <button
+        class="product-details-close close-btn close-btn--circle"
+      ></button>
+      <h3 class="modal-details__title">Coș</h3>
+      <div class="modal-details__table-wrap">
+        <div class="details-table">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="6">Coș</th>
+              </tr>
+              <tr>
+                <th>Product</th>
+                <th>Unitate de măsură</th>
+                <th>Preț</th>
+                <th>Număr</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Armatura 8</td>
+                <td>m2</td>
+                <td>200 lei</td>
+                <td>
+                  <div class="counter">
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--minus stepDown"
+                      onclick="this.parentNode.querySelector('input[type=number]').value--"
+                    ></button>
+                    <input
+                      class="counter__input"
+                      name="number"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--plus stepUp"
+                      onclick="this.parentNode.querySelector('input[type=number]').value++"
+                    ></button>
+                  </div>
+                </td>
+                <td>200 lei</td>
+                <td>
+                  <button class="delete-btn" type="button">
+                    <span class="delete-btn__icon"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Armatura 10</td>
+                <td>buc</td>
+                <td>200 lei</td>
+                <td>
+                  <div class="counter">
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--minus stepDown"
+                      onclick="this.parentNode.querySelector('input[type=number]').value--"
+                    ></button>
+                    <input
+                      class="counter__input"
+                      name="number"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--plus stepUp"
+                      onclick="this.parentNode.querySelector('input[type=number]').value++"
+                    ></button>
+                  </div>
+                </td>
+                <td>200 lei</td>
+                <td>
+                  <button class="delete-btn" type="button">
+                    <span class="delete-btn__icon"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Armatura 12</td>
+                <td>kg</td>
+                <td>200 lei</td>
+                <td>
+                  <div class="counter">
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--minus stepDown"
+                      onclick="this.parentNode.querySelector('input[type=number]').value--"
+                    ></button>
+                    <input
+                      class="counter__input"
+                      name="number"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--plus stepUp"
+                      onclick="this.parentNode.querySelector('input[type=number]').value++"
+                    ></button>
+                  </div>
+                </td>
+                <td>200 lei</td>
+                <td>
+                  <button class="delete-btn" type="button">
+                    <span class="delete-btn__icon"></span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Armatura 14</td>
+                <td>buc</td>
+                <td>200 lei</td>
+                <td>
+                  <div class="counter">
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--minus stepDown"
+                      onclick="this.parentNode.querySelector('input[type=number]').value--"
+                    ></button>
+                    <input
+                      class="counter__input"
+                      name="number"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="counter__btn counter__btn--plus stepUp"
+                      onclick="this.parentNode.querySelector('input[type=number]').value++"
+                    ></button>
+                  </div>
+                </td>
+                <td>200 lei</td>
+                <td>
+                  <button class="delete-btn" type="button">
+                    <span class="delete-btn__icon"></span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <h2 class="cart__title">Informații de contact</h2>
+      <div class="cart__form-block">
+        <form action="" class="form cart__form">
+          <div class="form__fields cart__fields-wrap">
+            <p>* Completați toate câmpurile obligatorii</p>
+            <input type="text" placeholder="* Numele" />
+            <input type="text" placeholder="* Prenumele" />
+            <input type="text" placeholder="* Oraș" />
+            <input
+              type="text"
+              placeholder="* Introduceți numărul de telefon mobil pentru a confirma comanda."
+            />
+            <input type="text" placeholder="* E-mail" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="* Comentarii generale asupra comenzii"
+            ></textarea>
+          </div>
 
-    @@include('./html-partials/products.html')
+          <div class="cart__right">
+            <div class="form__payment">
+              <input id="cash"
+                class="visually-hidden"
+                type="radio"
+                name="payment"
+                value="cash"
+                checked
+              />
+              <label for="cash">Achitare Cash</label>
+  
+              <input id="card"
+                class="visually-hidden"
+                type="radio"
+                name="payment"
+                value="card"
+              />
+              <label for="card">Achitare cu Card Bancar</label>
+  
+              <input id="transfer"
+                class="visually-hidden"
+                type="radio"
+                name="payment"
+                value="transfer"
+              />
+              <label for="transfer">Achitare Bank Transfer</label>
+            </div>
+            <div class="form__submit-block">
+              <button class="button" type="submit">Plasați Comanda</button>
+            </div>
+          </div>
 
-    @@include('./html-partials/about.html')
+        </form>
+      </div>
+    </div>
 
-    @@include('./html-partials/features.html')
-
-    @@include('./html-partials/testimonials.html')
-
-    @@include('./html-partials/parthners.html')
-
-    @@include('./html-partials/contacts.html')
-
-  </main> <!-- / .page-content -->
-
-  @@include('./html-partials/page-footer.html')
-
-  @@include('./html-partials/call-button.html')
-
-  @@include('./html-partials/modal-call-back.html')
-
-  @@include('./html-partials/overlay.html')
-
-  <!-- Java Script
+    <!-- Java Script
   ================================================== -->
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -112,6 +112,10 @@
   }
 }
 
+.page-header__cart {
+  margin-right: 30px;
+}
+
 @media (min-width: $desktopXS) {
   .page-header__logo {
     width: 280px;
@@ -123,7 +127,7 @@
     display: flex;
   }
 
-  .page-header__call-btn {
-    margin-left: 40px;
-  }
+  // .page-header__call-btn {
+  //   margin-left: 40px;
+  // }
 }

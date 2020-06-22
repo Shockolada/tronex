@@ -1,4 +1,21 @@
 .call-btn {
+  position: relative;
+  z-index: 1;
+  padding: 7px 30px;
+  border: 1px solid $color-violet;
+  border-radius: 10px;  
+  font-weight: 400;
+  line-height: 1;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $color-violet;
+  overflow: hidden;
+  text-transform: none;
+
+  cursor: pointer;
+
   min-height: 50px;
   padding-left: 60px;
   background-color: $color-accent;

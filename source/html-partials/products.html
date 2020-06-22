@@ -3,50 +3,169 @@
 
   <ul class="products__list">
     <li class="product">
-      <div class="product__img" style="background-image: url(img/prod-1.jpg);"></div>
+      <div
+        class="product__img"
+        style="background-image: url(img/prod-1.jpg);"
+      ></div>
       <h3 class="product__name">METAL LAMINAT</h3>
       <!-- <div class="product__btn-wrap"> -->
       <button class="button open-details-btn product__btn">Detalii</button>
       <!-- </div> -->
       <div class="product__details modal-details">
-        <button class="product-details-close close-btn close-btn--circle"></button>
+        <button
+          class="product-details-close close-btn close-btn--circle"
+        ></button>
         <h3 class="modal-details__title">METAL LAMINAT</h3>
-        <div class="details-table">
-          <table>
-            <thead>
-              <tr>
-                <th>Metal laminat</th>
-                <th>Kg/Metru</th>
-                <th>Metru/Tona</th>
-                <th>Lungimea</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>8</td>
-                <td>0.4</td>
-                <td>1612</td>
-                <td>12.00</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>0.4</td>
-                <td>1612</td>
-                <td>12.00</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="modal-details__table-wrap">
+          <div class="details-table">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="6">Armatura</th>
+                </tr>
+                <tr>
+                  <th>Product</th>
+                  <th>Unitate de măsură</th>
+                  <th>Preț</th>
+                  <th>Număr</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Armatura 8</td>
+                  <td>m2</td>
+                  <td>200 lei</td>
+                  <td>
+                    <div class="counter">
+                      <button
+                        type="button"
+                        class="counter__btn counter__btn--minus stepDown"
+                        onclick="this.parentNode.querySelector('input[type=number]').value--"
+                      ></button>
+                      <input
+                        class="counter__input"
+                        name="number"
+                        type="number"
+                        value="1"
+                        min="1"
+                      />
+                      <button
+                        type="button"
+                        class="counter__btn counter__btn--plus stepUp"
+                        onclick="this.parentNode.querySelector('input[type=number]').value++"
+                      ></button>
+                    </div>
+                  </td>
+                  <td>200 lei</td>
+                  <td><button class="button button--red" type="button">Adaugă în coș</button></td>
+                </tr>
+                <tr>
+                  <td>Armatura 10</td>
+                  <td>buc</td>
+                  <td>200 lei</td>
+                  <td>
+                    <div class="counter">
+                      <button
+                        type="button"
+                        class="counter__btn counter__btn--minus stepDown"
+                        onclick="this.parentNode.querySelector('input[type=number]').value--"
+                      ></button>
+                      <input
+                        class="counter__input"
+                        name="number"
+                        type="number"
+                        value="1"
+                        min="1"
+                      />
+                      <button
+                        type="button"
+                        class="counter__btn counter__btn--plus stepUp"
+                        onclick="this.parentNode.querySelector('input[type=number]').value++"
+                      ></button>
+                    </div>
+                  </td>
+                  <td>200 lei</td>
+                  <td><button class="button button--red" type="button">Adaugă în coș</button></td>
+                </tr>
+                <tr>
+                  <td>Armatura 12</td>
+                  <td>kg</td>
+                  <td>200 lei</td>
+                  <td>
+                    <div class="counter">
+                      <button
+                        type="button"
+                        class="counter__btn counter__btn--minus stepDown"
+                        onclick="this.parentNode.querySelector('input[type=number]').value--"
+                      ></button>
+                      <input
+                        class="counter__input"
+                        name="number"
+                        type="number"
+                        value="1"
+                        min="1"
+                      />
+                      <button
+                        type="button"
+                        class="counter__btn counter__btn--plus stepUp"
+                        onclick="this.parentNode.querySelector('input[type=number]').value++"
+                      ></button>
+                    </div>
+                  </td>
+                  <td>200 lei</td>
+                  <td><button class="button button--red" type="button">Adaugă în coș</button></td>
+                </tr>
+                <tr>
+                  <td>Armatura 14</td>
+                  <td>buc</td>
+                  <td>200 lei</td>
+                  <td>
+                    <div class="counter">
+                      <button
+                        type="button"
+                        class="counter__btn counter__btn--minus stepDown"
+                        onclick="this.parentNode.querySelector('input[type=number]').value--"
+                      ></button>
+                      <input
+                        class="counter__input"
+                        name="number"
+                        type="number"
+                        value="1"
+                        min="1"
+                      />
+                      <button
+                        type="button"
+                        class="counter__btn counter__btn--plus stepUp"
+                        onclick="this.parentNode.querySelector('input[type=number]').value++"
+                      ></button>
+                    </div>
+                  </td>
+                  <td>200 lei</td>
+                  <td><button class="button button--red" type="button">Adaugă în coș</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-details__note">
+          <span>*</span> Prețul poate varia pentru o altă unitate de măsură. La cantități mai mari de produs prețul este posibil de negociat. Pentru mai
+          multe informații sunați managerul: +373 6980600
         </div>
       </div>
     </li>
     <li class="product">
-      <div class="product__img" style="background-image: url(img/prod-2.jpg);"></div>
+      <div
+        class="product__img"
+        style="background-image: url(img/prod-2.jpg);"
+      ></div>
       <h3 class="product__name">Uși metalice</h3>
-      <!-- <div class="product__btn-wrap"> -->
       <button class="button open-details-btn product__btn">Detalii</button>
-      <!-- </div> -->
-      <div class="product__details modal-details">
-        <button class="product-details-close close-btn close-btn--circle"></button>
+      <!-- <div class="product__details modal-details">
+        <button
+          class="product-details-close close-btn close-btn--circle"
+        ></button>
         <h3 class="modal-details__title">Uși metalice</h3>
         <div class="details-table">
           <table>
@@ -74,17 +193,20 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </div> -->
     </li>
     <li class="product">
-      <div class="product__img" style="background-image: url(img/prod-3.jpg);"></div>
+      <div
+        class="product__img"
+        style="background-image: url(img/prod-3.jpg);"
+      ></div>
       <h3 class="product__name">ELEMENTE fORJATE</h3>
-      <!-- <div class="product__btn-wrap"> -->
       <button class="button open-details-btn product__btn">Detalii</button>
-      <!-- </div> -->
 
-      <div class="product__details modal-details">
-        <button class="product-details-close close-btn close-btn--circle"></button>
+      <!-- <div class="product__details modal-details">
+        <button
+          class="product-details-close close-btn close-btn--circle"
+        ></button>
         <h3 class="modal-details__title">ELEMENTE fORJATE</h3>
         <div class="details-table">
           <p>Oferim servicii de:</p>
@@ -111,16 +233,19 @@
 
           <p>- servicii găurire.</p>
         </div>
-      </div>
+      </div> -->
     </li>
     <li class="product">
-      <div class="product__img" style="background-image: url(img/prod-4.jpg);"></div>
+      <div
+        class="product__img"
+        style="background-image: url(img/prod-4.jpg);"
+      ></div>
       <h3 class="product__name">Materiale</h3>
-      <!-- <div class="product__btn-wrap"> -->
       <button class="button open-details-btn product__btn">Detalii</button>
-      <!-- </div> -->
-      <div class="product__details modal-details">
-        <button class="product-details-close close-btn close-btn--circle"></button>
+      <!-- <div class="product__details modal-details">
+        <button
+          class="product-details-close close-btn close-btn--circle"
+        ></button>
         <h3 class="modal-details__title">Materiale</h3>
         <div class="details-table">
           <table>
@@ -148,16 +273,19 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </div> -->
     </li>
     <li class="product">
-      <div class="product__img" style="background-image: url(img/prod-5.jpg);"></div>
+      <div
+        class="product__img"
+        style="background-image: url(img/prod-5.jpg);"
+      ></div>
       <h3 class="product__name">SERVICII</h3>
-      <!-- <div class="product__btn-wrap"> -->
       <button class="button open-details-btn product__btn">Detalii</button>
-      <!-- </div> -->
-      <div class="product__details modal-details">
-        <button class="product-details-close close-btn close-btn--circle"></button>
+      <!-- <div class="product__details modal-details">
+        <button
+          class="product-details-close close-btn close-btn--circle"
+        ></button>
         <h3 class="modal-details__title">SERVICII</h3>
         <div class="details-table">
           <table>
@@ -185,7 +313,7 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </div> -->
     </li>
   </ul>
 </section>

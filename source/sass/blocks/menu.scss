@@ -18,6 +18,10 @@
   .menu.active {
     transform: translateX(0);
   }
+
+  .menu__btn {
+    margin-right: auto;
+  }
 }
 
 @media(min-width: $mobileL) {

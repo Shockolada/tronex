@@ -4,17 +4,27 @@
   left: -50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
   max-width: 1200px;
-  max-height: 80vh;
+  height: 80vh;
   margin: 0 auto;
   padding: 20px;
   padding-top: 0;
   border-radius: 10px;
   background-color: #ffffff;
   overflow: hidden;
+  overflow-y: auto;
 
   transition: left 0.3s cubic-bezier(0, 0, 0, 1.2);
+}
+
+.modal-details__table-wrap {
+  flex-grow: 1;
+  min-height: 140px;
+  overflow: hidden;
+  margin-top: 30px;
 }
 
 .modal-details__title {
@@ -33,8 +43,22 @@
   left: 50%;
 }
 
+.modal-details__note {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #000000;
+
+  span {
+    color: #ff0000;
+  }
+}
+
 @media (min-width: $tabletS) {
   .modal-details {
     width: 90%;
+  }
+
+  .modal-details__note {
+    font-size: 17px;
   }
 }

@@ -16,8 +16,33 @@
 
   cursor: pointer;
 
-  // transition: border 0.2s linear, color 0.2s linear;
+  transition:all 0.2s linear;
 }
+
+.button:hover {
+  background-color: #fff;
+  color: $color-text;
+  transform: translate(0, -2px);
+  box-shadow: 1px 2px 2px 1px $color-violet,
+  1px 2px 0 1px $color-violet;
+}
+
+.button:focus {
+  background-color: $color-violet;
+  color: #ffffff;
+  transform: translate(0, 0);
+  box-shadow: unset;
+}
+
+.button--red {
+  background-color: $color-accent;
+  transition: 0.3s background-color linear;
+}
+
+.button--red:hover {
+  background-color: $color-violet;
+}
+
 
 .button:hover,
 .button:focus {
